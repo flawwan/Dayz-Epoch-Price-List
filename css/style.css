@@ -1,0 +1,3923 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+body, html {
+    height: 100%;
+    background: #ddd;
+}
+
+body {
+    min-width: 300px;
+}
+
+.amount {
+    font-size: 10px;
+    color: grey;
+}
+
+.info {
+    font-size: 15px;
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-variant: small-caps;
+    text-transform: none;
+    padding-left: 20px;
+}
+
+#author {
+    font-weight: bold;
+}
+
+#wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+#logo {
+    color: #ddd;
+    font-weight: normal;
+    position: relative;
+    float: left;
+    font-size: 22px;
+    font-family: Verdana, sans-serif;
+    padding-top: 12px;
+    padding-left: 10px;
+}
+
+#sidebar {
+    position: relative;
+    min-height: 100%;
+    width: 25%;
+    background: #212121;
+    float: left;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+#search {
+    padding-right: 10px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    text-align: right;
+    border-bottom: 1px solid #272727;
+    color: #aaa;
+    text-transform: uppercase;
+    background: #2d2d2d url(../images/s.png) no-repeat 10px;
+    font-size: 12px;
+    -webkit-appearance: none;
+}
+
+::-webkit-input-placeholder {
+    text-align: right;
+}
+
+ul li {
+    background: #212121;
+    list-style-type: none;
+    width: 100%;
+    line-height: 50px;
+    font-family: din-light, sans-serif;
+    text-transform: uppercase;
+    border-top: 1px solid #272727;
+    overflow: hidden
+}
+
+.subMenu {
+    display: none;
+}
+
+.subMenu li {
+    height: 50px;
+    overflow: hidden;
+}
+
+.subMenu li a {
+    padding-left: 20px;
+}
+
+ul li a {
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+ul li a:hover {
+    -webkit-transition: all .45s;
+    transition: all .45s;
+    background: #444
+}
+
+#sideHead {
+    width: 100%;
+    background: #212121;
+    height: 51px
+}
+
+@media all and (min-width:650px) {
+    nav {
+        display: block !important
+    }
+}
+
+@media all and (max-width:651px) {
+    #sidebar {
+        width: 100%;
+        border-bottom: 1px solid #aaa;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul li {
+        clear: both;
+        color: #000;
+        width: 100%;
+        line-height: 50px;
+        border-top: 1px solid #272727
+    }
+
+    #show {
+        display: block !important
+    }
+
+    nav {
+        display: none
+    }
+
+    #right {
+        width: 100% !important
+    }
+}
+
+/*@media all and (max-width:400px) {*/
+    /*table td {*/
+        /*height: 50px*/
+    /*}*/
+/*}*/
+
+#search:focus::-webkit-input-placeholder {
+    opacity: 0;
+    color: transparent
+}
+
+#search:focus:-moz-placeholder {
+    color: transparent
+}
+
+#search:focus {
+    outline: 0
+}
+
+.content {
+    display: none
+}
+
+#right {
+    float: left;
+    width: 75%
+}
+
+.item {
+    color: #888;
+    font-size: 10px;
+    text-transform: none;
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 50px;
+    display: block
+}
+
+li .image img {
+    width: 30px
+}
+
+h1, h2 {
+    font-family: Verdana, sans-serif;
+    text-align: center
+}
+
+table:first-child {
+    margin-top: 5px
+}
+
+table {
+    table-layout: fixed;
+    width: 98%;
+    color: #333;
+    border: 1px #999;
+    border-collapse: collapse;
+    font: 11px verdana, arial, sans-serif;
+    margin: 0 auto 10px;
+}
+
+table td {
+    font-family: din-light, sans-serif;
+    border: 1px solid #272727;
+    color: #fff;
+    height: 40px;
+    font-size: 14px;
+    padding-left: 10px
+}
+
+table tr td:first-child {
+    text-align: right;
+    padding: 0 15px
+}
+
+
+table  tr td:first-child{
+    width:40px;
+}
+
+
+
+table tr:nth-child(odd) {
+    background: #262626
+}
+
+table tr:first-child {
+    background: #333
+}
+
+table tr:nth-child(even) {
+    background: #212121
+}
+
+table tr td b {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+table tr td img {
+    margin: 0 auto;
+    display: block
+}
+
+#show {
+    display: none;
+    border: 1px solid #333;
+    width: 50px;
+    height: 35px;
+    float: right;
+    margin-right: 10px;
+    padding: 10px 10px;
+    margin-top: 7px;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: 0
+}
+
+#show:hover {
+    background: #262626
+}
+
+.line {
+    display: block;
+    width: 25px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #fff;
+    margin-bottom: 4px
+}
+
+.image {
+    display: inline-block;
+    position: relative;
+    top: 10px
+}
+
+.shown {
+    background: #666
+}
+
+.clear {
+    clear: both;
+}
+
+[class^=sprite-] {
+    background: url(../images/sprite.png) no-repeat;
+    display: inline-block;
+    overflow: hidden;
+    width: 40px
+}
+
+.sprite-len_l119a1_acog_cqb_sd_d {
+    height: 19px;
+    background-position: -200px -911px
+}
+
+.sprite-len_l119a1_acog_cqb_sd_hg {
+    height: 19px;
+    background-position: -240px -911px
+}
+
+.sprite-len_l119a1_acog_cqb_sd_hg_d {
+    height: 19px;
+    background-position: -280px -911px
+}
+
+.sprite-len_l119a1_acog_cqb_sd_hg_w {
+    height: 19px;
+    background-position: -320px -911px
+}
+
+.sprite-len_l119a1_acog_cqb_sd_w {
+    height: 19px;
+    background-position: -360px -911px
+}
+
+.sprite-len_l119a1_acog_cqb_w {
+    height: 19px;
+    background-position: -400px -911px
+}
+
+.sprite-len_l119a1_acog_d {
+    height: 19px;
+    background-position: -440px -911px
+}
+
+.sprite-len_l119a1_acog_hg {
+    height: 19px;
+    background-position: -480px -911px
+}
+
+.sprite-len_l119a1_acog_hg_d {
+    height: 19px;
+    background-position: -520px -911px
+}
+
+.sprite-len_l119a1_acog_hg_w {
+    height: 19px;
+    background-position: -560px -911px
+}
+
+.sprite-len_l119a1_acog_pf {
+    height: 19px;
+    background-position: -600px -911px
+}
+
+.sprite-len_l119a1_acog_pf_d {
+    height: 19px;
+    background-position: -640px -911px
+}
+
+.sprite-len_l119a1_acog_pf_sd {
+    height: 19px;
+    background-position: -680px -911px
+}
+
+.sprite-len_l119a1_acog_pf_sd_d {
+    height: 19px;
+    background-position: -720px -911px
+}
+
+.sprite-len_l119a1_acog_pf_sd_w {
+    height: 19px;
+    background-position: -760px -911px
+}
+
+.sprite-len_l119a1_acog_pf_w {
+    height: 19px;
+    background-position: -800px -911px
+}
+
+.sprite-len_l119a1_acog_ugl {
+    height: 19px;
+    background-position: -840px -911px
+}
+
+.sprite-len_l119a1_acog_ugl_d {
+    height: 19px;
+    background-position: -880px -911px
+}
+
+.sprite-len_l119a1_acog_ugl_pf {
+    height: 19px;
+    background-position: -920px -911px
+}
+
+.sprite-len_l119a1_acog_ugl_pf_d {
+    height: 19px;
+    background-position: 0 -930px
+}
+
+.sprite-len_l119a1_acog_ugl_pf_w {
+    height: 19px;
+    background-position: -40px -930px
+}
+
+.sprite-len_l119a1_acog_ugl_w {
+    height: 19px;
+    background-position: -80px -930px
+}
+
+.sprite-len_l119a1_acog_w {
+    height: 19px;
+    background-position: -120px -930px
+}
+
+.sprite-len_l119a1_eot_cqb {
+    height: 19px;
+    background-position: -160px -930px
+}
+
+.sprite-len_l119a1_eot_cqb_d {
+    height: 19px;
+    background-position: -200px -930px
+}
+
+.sprite-len_l119a1_eot_cqb_sd {
+    height: 19px;
+    background-position: -240px -930px
+}
+
+.sprite-len_l119a1_eot_cqb_sd_d {
+    height: 19px;
+    background-position: -280px -930px
+}
+
+.sprite-len_l119a1_eot_cqb_sd_w {
+    height: 19px;
+    background-position: -320px -930px
+}
+
+.sprite-len_l119a1_eot_cqb_w {
+    height: 19px;
+    background-position: -360px -930px
+}
+
+.sprite-len_l119a1_eot_pf {
+    height: 19px;
+    background-position: -400px -930px
+}
+
+.sprite-len_l119a1_eot_pf_d {
+    height: 19px;
+    background-position: -440px -930px
+}
+
+.sprite-len_l119a1_eot_pf_sd {
+    height: 19px;
+    background-position: -480px -930px
+}
+
+.sprite-len_l119a1_eot_pf_sd_d {
+    height: 19px;
+    background-position: -520px -930px
+}
+
+.sprite-len_l119a1_eot_pf_sd_w {
+    height: 19px;
+    background-position: -560px -930px
+}
+
+.sprite-len_l119a1_eot_pf_w {
+    height: 19px;
+    background-position: -600px -930px
+}
+
+.sprite-len_l119a1_eot_ugl_pf {
+    height: 19px;
+    background-position: -640px -930px
+}
+
+.sprite-len_l119a1_eot_ugl_pf_d {
+    height: 19px;
+    background-position: -680px -930px
+}
+
+.sprite-len_l119a1_eot_ugl_pf_w {
+    height: 19px;
+    background-position: -720px -930px
+}
+
+.sprite-logs {
+    height: 40px;
+    background-position: 0 -760px
+}
+
+.sprite-m4a1 {
+    height: 20px;
+    background-position: -280px -871px
+}
+
+.sprite-m4a1_aim {
+    height: 20px;
+    background-position: -360px -871px
+}
+
+.sprite-m4a1_aim_camo {
+    height: 20px;
+    background-position: -400px -871px
+}
+
+.sprite-m4a1_aim_sd_camo {
+    height: 20px;
+    background-position: -320px -871px
+}
+
+.sprite-m4a1_hws_gl {
+    height: 20px;
+    background-position: -440px -871px
+}
+
+.sprite-m4a1_hws_gl_camo {
+    height: 20px;
+    background-position: -520px -871px
+}
+
+.sprite-m4a1_hws_gl_sd_camo {
+    height: 20px;
+    background-position: -480px -871px
+}
+
+.sprite-m4a1_rco_gl {
+    height: 20px;
+    background-position: -560px -871px
+}
+
+.sprite-m4a3_cco_ep1 {
+    height: 20px;
+    background-position: -600px -871px
+}
+
+.sprite-m4a3_rco_gl_ep1 {
+    height: 20px;
+    background-position: -640px -871px
+}
+
+.sprite-m4spr {
+    height: 20px;
+    background-position: -680px -871px
+}
+
+.sprite-m8_carbine {
+    height: 20px;
+    background-position: -920px -660px
+}
+
+.sprite-m8_carbine_pmc {
+    height: 20px;
+    background-position: -920px -700px
+}
+
+.sprite-m8_carbinegl {
+    height: 20px;
+    background-position: -920px -680px
+}
+
+.sprite-m8_compact {
+    height: 20px;
+    background-position: -920px -720px
+}
+
+.sprite-m8_compact_pmc {
+    height: 20px;
+    background-position: -920px -740px
+}
+
+.sprite-m8_holo_sd {
+    height: 20px;
+    background-position: -920px -760px
+}
+
+.sprite-m8_saw {
+    height: 20px;
+    background-position: -920px -640px
+}
+
+.sprite-m8_sharpshooter {
+    height: 20px;
+    background-position: -920px -780px
+}
+
+.sprite-m8_tws {
+    height: 20px;
+    background-position: -920px -800px
+}
+
+.sprite-m8_tws_sd {
+    height: 20px;
+    background-position: -920px -820px
+}
+
+.sprite-m9 {
+    height: 40px;
+    background-position: -480px -640px
+}
+
+.sprite-m9sd {
+    height: 40px;
+    background-position: -520px -640px
+}
+
+.sprite-m14_ep1 {
+    height: 20px;
+    background-position: -880px -660px
+}
+
+.sprite-m16a2 {
+    height: 20px;
+    background-position: -880px -680px
+}
+
+.sprite-m16a2gl {
+    height: 20px;
+    background-position: -880px -700px
+}
+
+.sprite-m16a4 {
+    height: 20px;
+    background-position: -920px -580px
+}
+
+.sprite-m16a4_acg {
+    height: 20px;
+    background-position: -920px -600px
+}
+
+.sprite-m16a4_acg_gl {
+    height: 20px;
+    background-position: -880px -720px
+}
+
+.sprite-m16a4_gl {
+    height: 20px;
+    background-position: -880px -740px
+}
+
+.sprite-m24 {
+    height: 20px;
+    background-position: -880px -760px
+}
+
+.sprite-m24_des_ep1 {
+    height: 20px;
+    background-position: -120px -871px
+}
+
+.sprite-m32_ep1 {
+    height: 20px;
+    background-position: -160px -871px
+}
+
+.sprite-m40a3 {
+    height: 20px;
+    background-position: -200px -871px
+}
+
+.sprite-m47launcher_ep1 {
+    height: 20px;
+    background-position: -240px -871px
+}
+
+.sprite-m60a4_ep1 {
+    height: 20px;
+    background-position: -720px -871px
+}
+
+.sprite-m79_ep1 {
+    height: 20px;
+    background-position: -760px -871px
+}
+
+.sprite-m107 {
+    height: 20px;
+    background-position: -880px -580px
+}
+
+.sprite-m107_dz {
+    height: 20px;
+    background-position: -880px -600px
+}
+
+.sprite-m107_tws_ep1 {
+    height: 20px;
+    background-position: -920px -560px
+}
+
+.sprite-m110_nvg_ep1 {
+    height: 20px;
+    background-position: -880px -620px
+}
+
+.sprite-m110_tws_ep1 {
+    height: 20px;
+    background-position: -880px -640px
+}
+
+.sprite-m136 {
+    height: 40px;
+    background-position: -440px -640px
+}
+
+.sprite-m240 {
+    height: 20px;
+    background-position: -880px -780px
+}
+
+.sprite-m240_dz {
+    height: 20px;
+    background-position: -880px -800px
+}
+
+.sprite-m240_scoped_ep1 {
+    height: 20px;
+    background-position: -920px -620px
+}
+
+.sprite-m249 {
+    height: 20px;
+    background-position: -880px -820px
+}
+
+.sprite-m249_dz {
+    height: 20px;
+    background-position: -880px -840px
+}
+
+.sprite-m249_ep1 {
+    height: 20px;
+    background-position: 0 -871px
+}
+
+.sprite-m249_m145_ep1 {
+    height: 20px;
+    background-position: -80px -871px
+}
+
+.sprite-m249_tws_ep1 {
+    height: 20px;
+    background-position: -40px -871px
+}
+
+.sprite-m1014 {
+    height: 20px;
+    background-position: -880px -560px
+}
+
+.sprite-m1030 {
+    height: 40px;
+    background-position: -360px -640px
+}
+
+.sprite-m1030_us_des_ep1 {
+    height: 40px;
+    background-position: -400px -640px
+}
+
+.sprite-maaws {
+    height: 20px;
+    background-position: -800px -871px
+}
+
+.sprite-maaws_heat {
+    height: 40px;
+    background-position: -560px -640px
+}
+
+.sprite-maaws_hedp {
+    height: 40px;
+    background-position: -600px -640px
+}
+
+.sprite-machete_swing {
+    height: 40px;
+    background-position: -640px -640px
+}
+
+.sprite-makarov {
+    height: 40px;
+    background-position: -680px 0
+}
+
+.sprite-makarovsd {
+    height: 20px;
+    background-position: -120px -891px
+}
+
+.sprite-meeleflashlightred {
+    height: 40px;
+    background-position: -680px -40px
+}
+
+.sprite-meelehatchet {
+    height: 40px;
+    background-position: -680px -80px
+}
+
+.sprite-meleecrowbar {
+    height: 54px;
+    background-position: -40px 0
+}
+
+.sprite-meleeflashlight {
+    height: 40px;
+    background-position: -680px -120px
+}
+
+.sprite-meleeflashlightred {
+    height: 40px;
+    background-position: -680px -160px
+}
+
+.sprite-meleehatchet {
+    height: 40px;
+    background-position: -680px -200px
+}
+
+.sprite-meleemachete {
+    height: 40px;
+    background-position: -680px -240px
+}
+
+.sprite-metal {
+    height: 40px;
+    background-position: -40px -760px
+}
+
+.sprite-metislauncher {
+    height: 20px;
+    background-position: -160px -891px
+}
+
+.sprite-mg36 {
+    height: 20px;
+    background-position: -840px -871px
+}
+
+.sprite-mg36_camo {
+    height: 20px;
+    background-position: -880px -871px
+}
+
+.sprite-mh6j_dz {
+    height: 24px;
+    background-position: -840px -48px
+}
+
+.sprite-mh6j_ep1 {
+    height: 24px;
+    background-position: -840px -72px
+}
+
+.sprite-mi17_cdf {
+    height: 24px;
+    background-position: -840px -96px
+}
+
+.sprite-mi17_civilian {
+    height: 22px;
+    background-position: -840px -757px
+}
+
+.sprite-mi17_civilian_dz {
+    height: 22px;
+    background-position: -840px -779px
+}
+
+.sprite-mi17_civilian_nam {
+    height: 22px;
+    background-position: -840px -801px
+}
+
+.sprite-mi17_dz {
+    height: 24px;
+    background-position: -840px -120px
+}
+
+.sprite-mine {
+    height: 40px;
+    background-position: -680px -280px
+}
+
+.sprite-minee {
+    height: 40px;
+    background-position: -680px -320px
+}
+
+.sprite-mk_48 {
+    height: 20px;
+    background-position: -240px -891px
+}
+
+.sprite-mk_48_des_ep1 {
+    height: 20px;
+    background-position: -280px -891px
+}
+
+.sprite-mk_48_dz {
+    height: 20px;
+    background-position: -320px -891px
+}
+
+.sprite-mk13_ep1 {
+    height: 20px;
+    background-position: -200px -891px
+}
+
+.sprite-mmt_civ {
+    height: 31px;
+    background-position: -800px -398px
+}
+
+.sprite-moscow_bombing_file {
+    height: 40px;
+    background-position: -680px -360px
+}
+
+.sprite-mp5a5 {
+    height: 20px;
+    background-position: 0 -891px
+}
+
+.sprite-mp5sd {
+    height: 20px;
+    background-position: -40px -891px
+}
+
+.sprite-mr43 {
+    height: 20px;
+    background-position: -80px -891px
+}
+
+.sprite-mtvr {
+    height: 22px;
+    background-position: -840px -735px
+}
+
+.sprite-mtvr_des_ep1 {
+    height: 34px;
+    background-position: -800px -102px
+}
+
+.sprite-mtvrrefuel_des_ep1 {
+    height: 24px;
+    background-position: -840px -144px
+}
+
+.sprite-mtvrrefuel_des_ep1_dz {
+    height: 15px;
+    background-position: -960px -158px
+}
+
+.sprite-mv22 {
+    height: 26px;
+    background-position: -440px -800px
+}
+
+.sprite-mv22_dz {
+    height: 26px;
+    background-position: -480px -800px
+}
+
+.sprite-noimg {
+    height: 40px;
+    background-position: -80px -760px
+}
+
+.sprite-nvgoggles {
+    height: 40px;
+    background-position: -680px -400px
+}
+
+.sprite-offroad_dshkm_gue {
+    height: 25px;
+    background-position: -680px -800px
+}
+
+.sprite-og7 {
+    height: 40px;
+    background-position: -680px -440px
+}
+
+.sprite-og9_he {
+    height: 40px;
+    background-position: -680px -480px
+}
+
+.sprite-old_bike_tk_civ_ep1 {
+    height: 38px;
+    background-position: -240px -760px
+}
+
+.sprite-old_bike_tk_ins_ep1 {
+    height: 38px;
+    background-position: -280px -760px
+}
+
+.sprite-old_moto_tk_civ_ep1 {
+    height: 42px;
+    background-position: -120px -54px
+}
+
+.sprite-oring_ikarus {
+    height: 18px;
+    background-position: -960px -54px
+}
+
+.sprite-partengine {
+    height: 40px;
+    background-position: 0 -680px
+}
+
+.sprite-partfueltank {
+    height: 40px;
+    background-position: -40px -680px
+}
+
+.sprite-partgeneric {
+    height: 40px;
+    background-position: -80px -680px
+}
+
+.sprite-partglass {
+    height: 40px;
+    background-position: -120px -680px
+}
+
+.sprite-partwheel {
+    height: 40px;
+    background-position: -200px -680px
+}
+
+.sprite-partwoodlumber {
+    height: 40px;
+    background-position: -240px -680px
+}
+
+.sprite-partwoodpile {
+    height: 40px;
+    background-position: -280px -680px
+}
+
+.sprite-partwoodplywood {
+    height: 40px;
+    background-position: -320px -680px
+}
+
+.sprite-partvrotor {
+    height: 40px;
+    background-position: -160px -680px
+}
+
+.sprite-pbx {
+    height: 17px;
+    background-position: -960px -108px
+}
+
+.sprite-pecheneg {
+    height: 20px;
+    background-position: -480px -891px
+}
+
+.sprite-pellets {
+    height: 40px;
+    background-position: -120px -760px
+}
+
+.sprite-pg7v {
+    height: 40px;
+    background-position: -680px -520px
+}
+
+.sprite-pg7vl {
+    height: 40px;
+    background-position: -680px -560px
+}
+
+.sprite-pg7vr {
+    height: 40px;
+    background-position: -680px -600px
+}
+
+.sprite-pg9_at {
+    height: 40px;
+    background-position: -680px -640px
+}
+
+.sprite-pickup_pk_tk_gue_ep1 {
+    height: 29px;
+    background-position: -800px -698px
+}
+
+.sprite-pipebomb {
+    height: 40px;
+    background-position: -360px -680px
+}
+
+.sprite-pk {
+    height: 20px;
+    background-position: -360px -891px
+}
+
+.sprite-pmc_as50_scoped {
+    height: 20px;
+    background-position: -440px -891px
+}
+
+.sprite-pmc_as50_tws {
+    height: 20px;
+    background-position: -400px -891px
+}
+
+.sprite-policecar {
+    height: 30px;
+    background-position: -800px -610px
+}
+
+.sprite-post_bike_e {
+    height: 38px;
+    background-position: -320px -760px
+}
+
+.sprite-remington870 {
+    height: 20px;
+    background-position: -920px -840px
+}
+
+.sprite-remington870_lamp {
+    height: 20px;
+    background-position: -640px -891px
+}
+
+.sprite-revolver_ep1 {
+    height: 40px;
+    background-position: -160px -760px
+}
+
+.sprite-revolver_gold_ep1 {
+    height: 40px;
+    background-position: -200px -760px
+}
+
+.sprite-rhib {
+    height: 22px;
+    background-position: 0 -828px
+}
+
+.sprite-rpg7v {
+    height: 20px;
+    background-position: -560px -891px
+}
+
+.sprite-rpg18 {
+    height: 20px;
+    background-position: -520px -891px
+}
+
+.sprite-rpk_74 {
+    height: 20px;
+    background-position: -600px -891px
+}
+
+.sprite-s1203_ambulance_ep1 {
+    height: 24px;
+    background-position: -840px -168px
+}
+
+.sprite-s1203_tk_civ_ep1 {
+    height: 32px;
+    background-position: -800px -334px
+}
+
+.sprite-sa58p_ep1 {
+    height: 20px;
+    background-position: -920px -280px
+}
+
+.sprite-sa58v_cco_ep1 {
+    height: 20px;
+    background-position: -920px -300px
+}
+
+.sprite-sa58v_ep1 {
+    height: 20px;
+    background-position: -920px -320px
+}
+
+.sprite-sa58v_rco_ep1 {
+    height: 20px;
+    background-position: -920px -340px
+}
+
+.sprite-sa61_ep1 {
+    height: 40px;
+    background-position: -480px -680px
+}
+
+.sprite-saiga12k {
+    height: 20px;
+    background-position: -920px -360px
+}
+
+.sprite-scar_h_cqc_cco {
+    height: 20px;
+    background-position: -680px -891px
+}
+
+.sprite-scar_h_cqc_cco_sd {
+    height: 20px;
+    background-position: -720px -891px
+}
+
+.sprite-scar_h_lng_sniper {
+    height: 20px;
+    background-position: -760px -891px
+}
+
+.sprite-scar_h_lng_sniper_sd {
+    height: 20px;
+    background-position: -800px -891px
+}
+
+.sprite-scar_h_std_eglm_spect {
+    height: 20px;
+    background-position: -840px -891px
+}
+
+.sprite-scar_h_std_tws_sd {
+    height: 20px;
+    background-position: -880px -891px
+}
+
+.sprite-scar_l_cqc {
+    height: 20px;
+    background-position: -920px 0
+}
+
+.sprite-scar_l_cqc_cco_sd {
+    height: 20px;
+    background-position: -920px -20px
+}
+
+.sprite-scar_l_cqc_eglm_holo {
+    height: 20px;
+    background-position: -920px -40px
+}
+
+.sprite-scar_l_cqc_holo {
+    height: 20px;
+    background-position: -920px -60px
+}
+
+.sprite-scar_l_std_eglm_rco {
+    height: 20px;
+    background-position: -920px -80px
+}
+
+.sprite-scar_l_std_eglm_tws {
+    height: 20px;
+    background-position: -920px -100px
+}
+
+.sprite-scar_l_std_holo {
+    height: 20px;
+    background-position: -920px -120px
+}
+
+.sprite-scar_l_std_mk4cqt {
+    height: 20px;
+    background-position: -920px -140px
+}
+
+.sprite-skin_bandit1_dz {
+    height: 40px;
+    background-position: -520px -680px
+}
+
+.sprite-skin_bandit2_dz {
+    height: 40px;
+    background-position: -560px -680px
+}
+
+.sprite-skin_banditw1_dz {
+    height: 40px;
+    background-position: -600px -680px
+}
+
+.sprite-skin_banditw2_dz {
+    height: 40px;
+    background-position: -640px -680px
+}
+
+.sprite-skin_camo1_dz {
+    height: 40px;
+    background-position: -720px -40px
+}
+
+.sprite-skin_cz_soldier_sniper_ep1_dz {
+    height: 40px;
+    background-position: -680px -680px
+}
+
+.sprite-skin_cz_special_forces_gl_des_ep1_dz {
+    height: 40px;
+    background-position: -720px 0
+}
+
+.sprite-skin_drake_light_dz {
+    height: 40px;
+    background-position: -720px -80px
+}
+
+.sprite-skin_fr_ohara_dz {
+    height: 40px;
+    background-position: -720px -120px
+}
+
+.sprite-skin_fr_rodriguez_dz {
+    height: 40px;
+    background-position: -720px -160px
+}
+
+.sprite-skin_functionary1_ep1_dz {
+    height: 40px;
+    background-position: -720px -200px
+}
+
+.sprite-skin_graves_light_dz {
+    height: 40px;
+    background-position: -720px -440px
+}
+
+.sprite-skin_gue_commander_dz {
+    height: 40px;
+    background-position: -720px -240px
+}
+
+.sprite-skin_gue_soldier_2_dz {
+    height: 40px;
+    background-position: -720px -280px
+}
+
+.sprite-skin_gue_soldier_co_dz {
+    height: 40px;
+    background-position: -720px -320px
+}
+
+.sprite-skin_gue_soldier_crew_dz {
+    height: 40px;
+    background-position: -720px -360px
+}
+
+.sprite-skin_gue_soldier_sniper_dz {
+    height: 40px;
+    background-position: -720px -400px
+}
+
+.sprite-skin_haris_press_ep1_dz {
+    height: 40px;
+    background-position: -720px -480px
+}
+
+.sprite-skin_ins_soldier_gl_dz {
+    height: 40px;
+    background-position: -720px -520px
+}
+
+.sprite-skin_pilot_ep1_dz {
+    height: 40px;
+    background-position: -720px -560px
+}
+
+.sprite-skin_priest_dz {
+    height: 40px;
+    background-position: -720px -600px
+}
+
+.sprite-skin_rocker2_dz {
+    height: 40px;
+    background-position: -720px -680px
+}
+
+.sprite-skin_rocket_dz {
+    height: 40px;
+    background-position: 0 -720px
+}
+
+.sprite-skin_ru_policeman_dz {
+    height: 40px;
+    background-position: -720px -640px
+}
+
+.sprite-skin_sniper1_dz {
+    height: 40px;
+    background-position: -40px -720px
+}
+
+.sprite-skin_soldier_bodyguard_aa12_pmc_dz {
+    height: 40px;
+    background-position: -120px -720px
+}
+
+.sprite-skin_soldier_sniper_pmc_dz {
+    height: 40px;
+    background-position: -160px -720px
+}
+
+.sprite-skin_soldier_tl_pmc_dz {
+    height: 40px;
+    background-position: -200px -720px
+}
+
+.sprite-skin_soldier1_dz {
+    height: 40px;
+    background-position: -80px -720px
+}
+
+.sprite-skin_survivor1_dz {
+    height: 40px;
+    background-position: -240px -720px
+}
+
+.sprite-skin_survivor2_dz {
+    height: 40px;
+    background-position: -280px -720px
+}
+
+.sprite-skin_survivor3_dz {
+    height: 40px;
+    background-position: -320px -720px
+}
+
+.sprite-skin_survivorw2_dz {
+    height: 40px;
+    background-position: -360px -720px
+}
+
+.sprite-skin_survivorwcombat_dz {
+    height: 40px;
+    background-position: -400px -720px
+}
+
+.sprite-skin_survivorwdesert_dz {
+    height: 40px;
+    background-position: -440px -720px
+}
+
+.sprite-skin_survivorwpink_dz {
+    height: 40px;
+    background-position: -480px -720px
+}
+
+.sprite-skin_survivorwurban_dz {
+    height: 40px;
+    background-position: -520px -720px
+}
+
+.sprite-skin_tk_ins_soldier_ep1_dz {
+    height: 40px;
+    background-position: -560px -720px
+}
+
+.sprite-skin_tk_ins_warlord_ep1_dz {
+    height: 40px;
+    background-position: -600px -720px
+}
+
+.sprite-skoda {
+    height: 21px;
+    background-position: -640px -828px
+}
+
+.sprite-skodablue {
+    height: 24px;
+    background-position: -840px -192px
+}
+
+.sprite-skodagreen {
+    height: 21px;
+    background-position: -680px -828px
+}
+
+.sprite-skodared {
+    height: 21px;
+    background-position: -720px -828px
+}
+
+.sprite-smallboat_1 {
+    height: 16px;
+    background-position: -960px -142px
+}
+
+.sprite-smallboat_2 {
+    height: 17px;
+    background-position: -960px -125px
+}
+
+.sprite-smaw {
+    height: 20px;
+    background-position: -920px -160px
+}
+
+.sprite-smaw_heaa {
+    height: 40px;
+    background-position: -400px -680px
+}
+
+.sprite-smaw_hedp {
+    height: 40px;
+    background-position: -440px -680px
+}
+
+.sprite-smokeshell {
+    height: 40px;
+    background-position: -640px -720px
+}
+
+.sprite-smokeshellblue {
+    height: 40px;
+    background-position: -680px -720px
+}
+
+.sprite-smokeshellgreen {
+    height: 40px;
+    background-position: -720px -720px
+}
+
+.sprite-smokeshellorange {
+    height: 40px;
+    background-position: -760px 0
+}
+
+.sprite-smokeshellpurple {
+    height: 40px;
+    background-position: -760px -40px
+}
+
+.sprite-smokeshellred {
+    height: 40px;
+    background-position: -760px -80px
+}
+
+.sprite-smokeshellyellow {
+    height: 40px;
+    background-position: -760px -120px
+}
+
+.sprite-stinger {
+    height: 40px;
+    background-position: -760px -160px
+}
+
+.sprite-strela {
+    height: 40px;
+    background-position: -760px -200px
+}
+
+.sprite-suv_blue {
+    height: 22px;
+    background-position: -40px -828px
+}
+
+.sprite-suv_camo {
+    height: 20px;
+    background-position: -920px -180px
+}
+
+.sprite-suv_charcoal {
+    height: 33px;
+    background-position: -800px -203px
+}
+
+.sprite-suv_green {
+    height: 26px;
+    background-position: -520px -800px
+}
+
+.sprite-suv_orange {
+    height: 37px;
+    background-position: -480px -760px
+}
+
+.sprite-suv_pink {
+    height: 33px;
+    background-position: -800px -236px
+}
+
+.sprite-suv_red {
+    height: 31px;
+    background-position: -800px -429px
+}
+
+.sprite-suv_silver {
+    height: 33px;
+    background-position: -800px -269px
+}
+
+.sprite-suv_tk_civ_ep1 {
+    height: 25px;
+    background-position: -720px -800px
+}
+
+.sprite-suv_tk_ep1 {
+    height: 25px;
+    background-position: -760px -800px
+}
+
+.sprite-suv_white {
+    height: 37px;
+    background-position: -520px -760px
+}
+
+.sprite-suv_yellow {
+    height: 42px;
+    background-position: -160px -54px
+}
+
+.sprite-svd {
+    height: 20px;
+    background-position: -920px -200px
+}
+
+.sprite-svd_camo {
+    height: 20px;
+    background-position: -920px -220px
+}
+
+.sprite-svd_des_ep1 {
+    height: 20px;
+    background-position: -920px -260px
+}
+
+.sprite-svd_nspu_ep1 {
+    height: 20px;
+    background-position: -920px -240px
+}
+
+.sprite-tractor {
+    height: 32px;
+    background-position: -800px -366px
+}
+
+.sprite-trapbear {
+    height: 40px;
+    background-position: -760px -240px
+}
+
+.sprite-trashjackdaniels {
+    height: 40px;
+    background-position: -760px -280px
+}
+
+.sprite-trashtincan {
+    height: 40px;
+    background-position: -760px -320px
+}
+
+.sprite-tt650_civ {
+    height: 35px;
+    background-position: -680px -760px
+}
+
+.sprite-tt650_gue {
+    height: 44px;
+    background-position: -40px -54px
+}
+
+.sprite-tt650_ins {
+    height: 44px;
+    background-position: -80px -54px
+}
+
+.sprite-tt650_tk_civ_ep1 {
+    height: 45px;
+    background-position: -160px 0
+}
+
+.sprite-tt650_tk_ep1 {
+    height: 45px;
+    background-position: 0 -54px
+}
+
+.sprite-uaz_cdf {
+    height: 24px;
+    background-position: -840px -216px
+}
+
+.sprite-uaz_ins {
+    height: 28px;
+    background-position: 0 -800px
+}
+
+.sprite-uaz_mg_tk_ep1 {
+    height: 24px;
+    background-position: -840px -240px
+}
+
+.sprite-uaz_ru {
+    height: 24px;
+    background-position: -840px -264px
+}
+
+.sprite-uaz_unarmed_tk_civ_ep1 {
+    height: 30px;
+    background-position: -800px -520px
+}
+
+.sprite-uaz_unarmed_tk_ep1 {
+    height: 34px;
+    background-position: -800px -136px
+}
+
+.sprite-uaz_unarmed_un_ep1 {
+    height: 35px;
+    background-position: -720px -760px
+}
+
+.sprite-uh1h_dz {
+    height: 20px;
+    background-position: -920px -380px
+}
+
+.sprite-ural_cdf {
+    height: 22px;
+    background-position: -120px -828px
+}
+
+.sprite-ural_ins {
+    height: 22px;
+    background-position: -160px -828px
+}
+
+.sprite-ural_tk_civ_ep1 {
+    height: 29px;
+    background-position: -800px -727px
+}
+
+.sprite-ural_un_ep1 {
+    height: 30px;
+    background-position: -800px -580px
+}
+
+.sprite-uralcivil {
+    height: 22px;
+    background-position: -80px -828px
+}
+
+.sprite-uralcivil2 {
+    height: 19px;
+    background-position: -760px -930px
+}
+
+.sprite-uralrefuel_ins {
+    height: 21px;
+    background-position: -760px -828px
+}
+
+.sprite-uralrefuel_tk_ep1 {
+    height: 30px;
+    background-position: -800px -550px
+}
+
+.sprite-uzi_ep1 {
+    height: 40px;
+    background-position: -760px -360px
+}
+
+.sprite-uzi_sd_ep1 {
+    height: 40px;
+    background-position: -760px -400px
+}
+
+.sprite-v3s_civ {
+    height: 21px;
+    background-position: -800px -828px
+}
+
+.sprite-vempty {
+    height: 15px;
+    background-position: -960px -173px
+}
+
+.sprite-vil_bmw7_civil2 {
+    height: 19px;
+    background-position: -800px -930px
+}
+
+.sprite-vil_bmw7_civilvip {
+    height: 19px;
+    background-position: -840px -930px
+}
+
+.sprite-vil_vivaro_amb {
+    height: 20px;
+    background-position: -920px -400px
+}
+
+.sprite-winchester1866 {
+    height: 8px;
+    background-position: -960px -201px
+}
+
+.sprite-wire_cat1 {
+    height: 40px;
+    background-position: -760px -440px
+}
+
+.sprite-volha_1_tk_civ_ep1 {
+    height: 26px;
+    background-position: -560px -800px
+}
+
+.sprite-volha_2_tk_civ_ep1 {
+    height: 25px;
+    background-position: -800px -800px
+}
+
+.sprite-volhalimo_tk_civ_ep1 {
+    height: 20px;
+    background-position: -920px -440px
+}
+
+.sprite-woodenarrow {
+    height: 40px;
+    background-position: -760px -480px
+}
+
+.sprite-vss_vintorez {
+    height: 20px;
+    background-position: -920px -420px
+}
+
+.sprite-vwgolf {
+    height: 21px;
+    background-position: -840px -828px
+}
+
+.sprite-zodiac {
+    height: 19px;
+    background-position: -880px -930px
+}
+
+.sprite-1rnd_he_gp25 {
+    height: 40px;
+    background-position: -80px -200px
+}
+
+.sprite-1rnd_he_m203 {
+    height: 40px;
+    background-position: -120px -200px
+}
+
+.sprite-1rnd_smoke_gp25 {
+    height: 40px;
+    background-position: -160px -200px
+}
+
+.sprite-1rnd_smoke_m203 {
+    height: 40px;
+    background-position: -240px -200px
+}
+
+.sprite-1rnd_smokegreen_gp25 {
+    height: 40px;
+    background-position: -200px -200px
+}
+
+.sprite-1rnd_smokegreen_m203 {
+    height: 40px;
+    background-position: -240px 0
+}
+
+.sprite-1rnd_smokered_gp25 {
+    height: 40px;
+    background-position: -240px -40px
+}
+
+.sprite-1rnd_smokered_m203 {
+    height: 40px;
+    background-position: -240px -80px
+}
+
+.sprite-1rnd_smokeyellow_gp25 {
+    height: 40px;
+    background-position: -240px -120px
+}
+
+.sprite-1rnd_smokeyellow_m203 {
+    height: 40px;
+    background-position: -240px -160px
+}
+
+.sprite-2rnd_igla {
+    height: 40px;
+    background-position: -280px -240px
+}
+
+.sprite-2rnd_shotgun_74pellets {
+    height: 40px;
+    background-position: 0 -280px
+}
+
+.sprite-2rnd_shotgun_74slug {
+    height: 40px;
+    background-position: -40px -280px
+}
+
+.sprite-5rnd_86x70_l115a1 {
+    height: 40px;
+    background-position: -80px -320px
+}
+
+.sprite-5rnd_127x99_as50 {
+    height: 40px;
+    background-position: 0 -320px
+}
+
+.sprite-5rnd_127x108_ksvk {
+    height: 40px;
+    background-position: -320px -280px
+}
+
+.sprite-5rnd_762x51_m24 {
+    height: 40px;
+    background-position: -40px -320px
+}
+
+.sprite-5x_22_lr_17_hmr {
+    height: 40px;
+    background-position: -120px -320px
+}
+
+.sprite-6rnd_45acp {
+    height: 40px;
+    background-position: -280px -320px
+}
+
+.sprite-6rnd_flaregreen_m203 {
+    height: 40px;
+    background-position: -320px -320px
+}
+
+.sprite-6rnd_flarered_m203 {
+    height: 40px;
+    background-position: -360px 0
+}
+
+.sprite-6rnd_flarewhite_m203 {
+    height: 40px;
+    background-position: -360px -40px
+}
+
+.sprite-6rnd_flareyellow_m203 {
+    height: 40px;
+    background-position: -360px -80px
+}
+
+.sprite-6rnd_he_m203 {
+    height: 40px;
+    background-position: -360px -120px
+}
+
+.sprite-6rnd_he_m203_heli {
+    height: 40px;
+    background-position: -360px -160px
+}
+
+.sprite-6rnd_smoke_m203 {
+    height: 40px;
+    background-position: -360px -320px
+}
+
+.sprite-6rnd_smokegreen_m203 {
+    height: 40px;
+    background-position: -360px -200px
+}
+
+.sprite-6rnd_smokered_m203 {
+    height: 40px;
+    background-position: -360px -240px
+}
+
+.sprite-6rnd_smokeyellow_m203 {
+    height: 40px;
+    background-position: -360px -280px
+}
+
+.sprite-7rnd_45acp_1911 {
+    height: 40px;
+    background-position: -40px -360px
+}
+
+.sprite-8rnd_9x18_makarov {
+    height: 40px;
+    background-position: -80px -360px
+}
+
+.sprite-8rnd_9x18_makarovsd {
+    height: 40px;
+    background-position: -120px -360px
+}
+
+.sprite-8rnd_b_beneli_74slug {
+    height: 40px;
+    background-position: -160px -360px
+}
+
+.sprite-8rnd_b_beneli_pellets {
+    height: 40px;
+    background-position: -200px -360px
+}
+
+.sprite-8rnd_b_saiga12_74slug {
+    height: 40px;
+    background-position: -240px -360px
+}
+
+.sprite-8rnd_b_saiga12_pellets {
+    height: 40px;
+    background-position: -280px -360px
+}
+
+.sprite-10rnd_9x39_sp5_vss {
+    height: 40px;
+    background-position: -120px -140px
+}
+
+.sprite-10rnd_127x99_m107 {
+    height: 40px;
+    background-position: -40px -140px
+}
+
+.sprite-10rnd_762x54_svd {
+    height: 40px;
+    background-position: -80px -140px
+}
+
+.sprite-10rnd_b_765x17_ball {
+    height: 40px;
+    background-position: -160px -140px
+}
+
+.sprite-10x_303 {
+    height: 40px;
+    background-position: -200px 0
+}
+
+.sprite-15rnd_9x19_m9 {
+    height: 40px;
+    background-position: -200px -40px
+}
+
+.sprite-15rnd_9x19_m9sd {
+    height: 40px;
+    background-position: -200px -80px
+}
+
+.sprite-15rnd_w1866_pellets {
+    height: 40px;
+    background-position: -200px -120px
+}
+
+.sprite-15rnd_w1866_slug {
+    height: 40px;
+    background-position: -200px -160px
+}
+
+.sprite-17rnd_9x19_glock17 {
+    height: 40px;
+    background-position: 0 -200px
+}
+
+.sprite-20rnd_9x39_sp5_vss {
+    height: 40px;
+    background-position: -280px -40px
+}
+
+.sprite-20rnd_556x45_stanag {
+    height: 40px;
+    background-position: -120px -240px
+}
+
+.sprite-20rnd_762x51_b_scar {
+    height: 40px;
+    background-position: -160px -240px
+}
+
+.sprite-20rnd_762x51_dmr {
+    height: 40px;
+    background-position: -200px -240px
+}
+
+.sprite-20rnd_762x51_fnfal {
+    height: 40px;
+    background-position: -240px -240px
+}
+
+.sprite-20rnd_762x51_sb_scar {
+    height: 40px;
+    background-position: -280px 0
+}
+
+.sprite-20rnd_b_765x17_ball {
+    height: 40px;
+    background-position: -280px -80px
+}
+
+.sprite-20rnd_b_aa12_74slug {
+    height: 40px;
+    background-position: -280px -120px
+}
+
+.sprite-20rnd_b_aa12_he {
+    height: 40px;
+    background-position: -280px -160px
+}
+
+.sprite-20rnd_b_aa12_pellets {
+    height: 40px;
+    background-position: -280px -200px
+}
+
+.sprite-30rnd_9x19_mp5 {
+    height: 40px;
+    background-position: -320px -80px
+}
+
+.sprite-30rnd_9x19_mp5sd {
+    height: 40px;
+    background-position: -320px -120px
+}
+
+.sprite-30rnd_9x19_uzi {
+    height: 40px;
+    background-position: -320px -160px
+}
+
+.sprite-30rnd_9x19_uzi_sd {
+    height: 40px;
+    background-position: -320px -200px
+}
+
+.sprite-30rnd_545x39_ak {
+    height: 40px;
+    background-position: -80px -280px
+}
+
+.sprite-30rnd_545x39_aksd {
+    height: 40px;
+    background-position: -120px -280px
+}
+
+.sprite-30rnd_556x45_g36 {
+    height: 40px;
+    background-position: -160px -280px
+}
+
+.sprite-30rnd_556x45_g36sd {
+    height: 40px;
+    background-position: -200px -280px
+}
+
+.sprite-30rnd_556x45_stanag {
+    height: 40px;
+    background-position: -240px -280px
+}
+
+.sprite-30rnd_556x45_stanagsd {
+    height: 40px;
+    background-position: -280px -280px
+}
+
+.sprite-30rnd_762x39_ak47 {
+    height: 40px;
+    background-position: -320px 0
+}
+
+.sprite-30rnd_762x39_sa58 {
+    height: 40px;
+    background-position: -320px -40px
+}
+
+.sprite-45acp {
+    height: 40px;
+    background-position: -320px -240px
+}
+
+.sprite-60rnd_762x54_dt {
+    height: 40px;
+    background-position: -160px -320px
+}
+
+.sprite-64rnd_9x19_bizon {
+    height: 40px;
+    background-position: -200px -320px
+}
+
+.sprite-64rnd_9x19_sd_bizon {
+    height: 40px;
+    background-position: -240px -320px
+}
+
+.sprite-75rnd_545x39_rpk {
+    height: 40px;
+    background-position: 0 -360px
+}
+
+.sprite-100rnd_556x45_betacmag {
+    height: 40px;
+    background-position: -40px -99px
+}
+
+.sprite-100rnd_556x45_betacmag_airlock {
+    height: 40px;
+    background-position: -80px -99px
+}
+
+.sprite-100rnd_556x45_m249 {
+    height: 40px;
+    background-position: -120px -99px
+}
+
+.sprite-100rnd_762x51_m240 {
+    height: 40px;
+    background-position: -160px -99px
+}
+
+.sprite-100rnd_762x54_pk {
+    height: 40px;
+    background-position: 0 -140px
+}
+
+.sprite-200rnd_556x45_l110a1 {
+    height: 40px;
+    background-position: 0 -240px
+}
+
+.sprite-200rnd_556x45_m249 {
+    height: 40px;
+    background-position: -40px -240px
+}
+
+.sprite-200rnd_762x51_m240 {
+    height: 40px;
+    background-position: -80px -240px
+}
+
+.sprite-1911 {
+    height: 40px;
+    background-position: -40px -200px
+}
+
+.sprite-aa12_pmc {
+    height: 20px;
+    background-position: 0 -180px
+}
+
+.sprite-ah6j_dz {
+    height: 29px;
+    background-position: -800px -640px
+}
+
+.sprite-ah6j_ep1 {
+    height: 29px;
+    background-position: -800px -669px
+}
+
+.sprite-ah6x_dz {
+    height: 21px;
+    background-position: -320px -828px
+}
+
+.sprite-ah6x_ep1 {
+    height: 21px;
+    background-position: -360px -828px
+}
+
+.sprite-ak_47_m {
+    height: 20px;
+    background-position: -440px -850px
+}
+
+.sprite-ak_47_s {
+    height: 20px;
+    background-position: -480px -850px
+}
+
+.sprite-ak_74 {
+    height: 20px;
+    background-position: -520px -850px
+}
+
+.sprite-ak_74_gl {
+    height: 20px;
+    background-position: -560px -850px
+}
+
+.sprite-ak_74_gl_kobra {
+    height: 20px;
+    background-position: -600px -850px
+}
+
+.sprite-ak_107_gl_kobra {
+    height: 20px;
+    background-position: -280px -850px
+}
+
+.sprite-ak_107_gl_pso {
+    height: 20px;
+    background-position: -320px -850px
+}
+
+.sprite-ak_107_kobra {
+    height: 20px;
+    background-position: -360px -850px
+}
+
+.sprite-ak_107_pso {
+    height: 20px;
+    background-position: -400px -850px
+}
+
+.sprite-aks_74 {
+    height: 20px;
+    background-position: -40px -180px
+}
+
+.sprite-aks_74_goshawk {
+    height: 20px;
+    background-position: -80px -180px
+}
+
+.sprite-aks_74_kobra {
+    height: 20px;
+    background-position: -160px -850px
+}
+
+.sprite-aks_74_nspu {
+    height: 20px;
+    background-position: -120px -180px
+}
+
+.sprite-aks_74_pso {
+    height: 20px;
+    background-position: -200px -850px
+}
+
+.sprite-aks_74_u {
+    height: 20px;
+    background-position: -160px -180px
+}
+
+.sprite-aks_74_un_kobra {
+    height: 20px;
+    background-position: -120px -850px
+}
+
+.sprite-aks_gold {
+    height: 20px;
+    background-position: -240px -850px
+}
+
+.sprite-an2_1_tk_civ_ep1 {
+    height: 24px;
+    background-position: -840px 0
+}
+
+.sprite-an2_dz {
+    height: 23px;
+    background-position: -840px -312px
+}
+
+.sprite-an2_tk_ep1 {
+    height: 23px;
+    background-position: -840px -335px
+}
+
+.sprite-armoredsuv_pmc {
+    height: 23px;
+    background-position: -840px -358px
+}
+
+.sprite-armoredsuv_pmc_dz {
+    height: 23px;
+    background-position: -840px -381px
+}
+
+.sprite-at13 {
+    height: 40px;
+    background-position: -320px -360px
+}
+
+.sprite-atv_cz_ep1 {
+    height: 36px;
+    background-position: -600px -760px
+}
+
+.sprite-atv_us_ep1 {
+    height: 36px;
+    background-position: -640px -760px
+}
+
+.sprite-baf_as50_scoped {
+    height: 20px;
+    background-position: -680px -850px
+}
+
+.sprite-baf_as50_tws {
+    height: 20px;
+    background-position: -640px -850px
+}
+
+.sprite-baf_ied_v1 {
+    height: 40px;
+    background-position: -400px 0
+}
+
+.sprite-baf_ied_v2 {
+    height: 40px;
+    background-position: -400px -40px
+}
+
+.sprite-baf_ied_v3 {
+    height: 40px;
+    background-position: -400px -80px
+}
+
+.sprite-baf_ied_v4 {
+    height: 40px;
+    background-position: -400px -120px
+}
+
+.sprite-baf_l7a2_gpmg {
+    height: 20px;
+    background-position: -760px -850px
+}
+
+.sprite-baf_l85a2_ris_acog {
+    height: 20px;
+    background-position: -800px -850px
+}
+
+.sprite-baf_l85a2_ris_cws {
+    height: 20px;
+    background-position: -840px -850px
+}
+
+.sprite-baf_l85a2_ris_holo {
+    height: 20px;
+    background-position: -880px 0
+}
+
+.sprite-baf_l85a2_ris_susat {
+    height: 20px;
+    background-position: -880px -20px
+}
+
+.sprite-baf_l85a2_ugl_acog {
+    height: 20px;
+    background-position: -880px -40px
+}
+
+.sprite-baf_l85a2_ugl_holo {
+    height: 20px;
+    background-position: -880px -60px
+}
+
+.sprite-baf_l85a2_ugl_susat {
+    height: 20px;
+    background-position: -880px -80px
+}
+
+.sprite-baf_l86a2_acog {
+    height: 20px;
+    background-position: -880px -100px
+}
+
+.sprite-baf_l109a1_he {
+    height: 40px;
+    background-position: -360px -360px
+}
+
+.sprite-baf_l110a1_aim {
+    height: 20px;
+    background-position: -720px -850px
+}
+
+.sprite-baf_lrr_scoped {
+    height: 20px;
+    background-position: -880px -120px
+}
+
+.sprite-baf_lrr_scoped_w {
+    height: 20px;
+    background-position: -880px -140px
+}
+
+.sprite-baf_nlaw_launcher {
+    height: 20px;
+    background-position: -880px -160px
+}
+
+.sprite-baf_offroad_d {
+    height: 26px;
+    background-position: -160px -800px
+}
+
+.sprite-baf_offroad_w {
+    height: 26px;
+    background-position: -200px -800px
+}
+
+.sprite-bempty {
+    height: 37px;
+    background-position: -560px -760px
+}
+
+.sprite-binocular {
+    height: 40px;
+    background-position: -400px -160px
+}
+
+.sprite-binocular_vector {
+    height: 40px;
+    background-position: -400px -200px
+}
+
+.sprite-bizon {
+    height: 20px;
+    background-position: -920px -460px
+}
+
+.sprite-bizon_silenced {
+    height: 20px;
+    background-position: -920px -480px
+}
+
+.sprite-boltsteel {
+    height: 40px;
+    background-position: -400px -240px
+}
+
+.sprite-brdm2_atgm_cdf {
+    height: 22px;
+    background-position: -840px -427px
+}
+
+.sprite-brdm2_atgm_ins {
+    height: 22px;
+    background-position: -840px -449px
+}
+
+.sprite-brdm2_cdf {
+    height: 19px;
+    background-position: -920px -860px
+}
+
+.sprite-brdm2_ins {
+    height: 21px;
+    background-position: -400px -828px
+}
+
+.sprite-buggy_dz {
+    height: 30px;
+    background-position: -800px -460px
+}
+
+.sprite-bw_ikarus1 {
+    height: 22px;
+    background-position: -840px -471px
+}
+
+.sprite-bw_ikarus2 {
+    height: 19px;
+    background-position: -920px -879px
+}
+
+.sprite-c130j {
+    height: 21px;
+    background-position: -440px -828px
+}
+
+.sprite-c130j_us_ep1 {
+    height: 21px;
+    background-position: -480px -828px
+}
+
+.sprite-car_hatchback {
+    height: 18px;
+    background-position: -960px -72px
+}
+
+.sprite-car_sedan {
+    height: 18px;
+    background-position: -960px -90px
+}
+
+.sprite-cdf_dogtags {
+    height: 40px;
+    background-position: -400px -280px
+}
+
+.sprite-ch_47f_ep1 {
+    height: 22px;
+    background-position: -840px -515px
+}
+
+.sprite-ch_47f_ep1_dz {
+    height: 22px;
+    background-position: -840px -537px
+}
+
+.sprite-ch47_dz {
+    height: 22px;
+    background-position: -840px -493px
+}
+
+.sprite-cloth_parcel {
+    height: 40px;
+    background-position: -760px -520px
+}
+
+.sprite-colt1911 {
+    height: 40px;
+    background-position: -400px -360px
+}
+
+.sprite-crossbow {
+    height: 20px;
+    background-position: -880px -180px
+}
+
+.sprite-crossbow_dz {
+    height: 20px;
+    background-position: -880px -200px
+}
+
+.sprite-crossbow_scope {
+    height: 20px;
+    background-position: -880px -220px
+}
+
+.sprite-crowbar_swing {
+    height: 54px;
+    background-position: -80px 0
+}
+
+.sprite-csj_gyrop {
+    height: 41px;
+    background-position: 0 -99px
+}
+
+.sprite-cz_vestpouch_ep1 {
+    height: 40px;
+    background-position: -400px -320px
+}
+
+.sprite-datsun1_civil_1_open {
+    height: 22px;
+    background-position: -200px -828px
+}
+
+.sprite-datsun1_civil_2_covered {
+    height: 26px;
+    background-position: -600px -800px
+}
+
+.sprite-datsun1_civil_3_open {
+    height: 22px;
+    background-position: -240px -828px
+}
+
+.sprite-dmr {
+    height: 20px;
+    background-position: -880px -240px
+}
+
+.sprite-dragon_ep1 {
+    height: 40px;
+    background-position: -320px -400px
+}
+
+.sprite-dz_alice_pack_ep1 {
+    height: 40px;
+    background-position: 0 -400px
+}
+
+.sprite-dz_assault_pack_ep1 {
+    height: 40px;
+    background-position: -40px -400px
+}
+
+.sprite-dz_backpack_ep1 {
+    height: 40px;
+    background-position: -80px -400px
+}
+
+.sprite-dz_british_acu {
+    height: 48px;
+    background-position: -120px 0
+}
+
+.sprite-dz_civilbackpack_ep1 {
+    height: 40px;
+    background-position: -120px -400px
+}
+
+.sprite-dz_compactpack_ep1 {
+    height: 40px;
+    background-position: -160px -400px
+}
+
+.sprite-dz_czech_vest_puch {
+    height: 40px;
+    background-position: -200px -400px
+}
+
+.sprite-dz_gunbag_ep1 {
+    height: 20px;
+    background-position: -880px -260px
+}
+
+.sprite-dz_largegunbag_ep1 {
+    height: 20px;
+    background-position: -880px -280px
+}
+
+.sprite-dz_patrol_pack_ep1 {
+    height: 40px;
+    background-position: -240px -400px
+}
+
+.sprite-dz_tk_assault_pack_ep1 {
+    height: 40px;
+    background-position: -280px -400px
+}
+
+.sprite-equip_generator_ca {
+    height: 40px;
+    background-position: -760px -560px
+}
+
+.sprite-equip_logs_ca {
+    height: 40px;
+    background-position: -760px -600px
+}
+
+.sprite-equip_metal_ca {
+    height: 40px;
+    background-position: -760px -640px
+}
+
+.sprite-evdogtags {
+    height: 40px;
+    background-position: -360px -400px
+}
+
+.sprite-evkobalt {
+    height: 40px;
+    background-position: -400px -400px
+}
+
+.sprite-fencewire_kit {
+    height: 40px;
+    background-position: -760px -680px
+}
+
+.sprite-fishing_boat {
+    height: 18px;
+    background-position: -960px 0
+}
+
+.sprite-flaregreen_gp25 {
+    height: 40px;
+    background-position: -440px 0
+}
+
+.sprite-flaregreen_m203 {
+    height: 40px;
+    background-position: -440px -40px
+}
+
+.sprite-flarered_gp25 {
+    height: 40px;
+    background-position: -440px -80px
+}
+
+.sprite-flarered_m203 {
+    height: 40px;
+    background-position: -440px -120px
+}
+
+.sprite-flarewhite_gp25 {
+    height: 40px;
+    background-position: -440px -160px
+}
+
+.sprite-flarewhite_m203 {
+    height: 40px;
+    background-position: -440px -200px
+}
+
+.sprite-flareyellow_gp25 {
+    height: 40px;
+    background-position: -440px -240px
+}
+
+.sprite-flareyellow_m203 {
+    height: 40px;
+    background-position: -440px -280px
+}
+
+.sprite-fn_fal {
+    height: 20px;
+    background-position: -880px -300px
+}
+
+.sprite-fn_fal_anpvs4 {
+    height: 20px;
+    background-position: -880px -320px
+}
+
+.sprite-foodbaconcooked {
+    height: 40px;
+    background-position: -240px -480px
+}
+
+.sprite-foodbaconraw {
+    height: 40px;
+    background-position: -280px -480px
+}
+
+.sprite-foodbeefcooked {
+    height: 40px;
+    background-position: -320px -480px
+}
+
+.sprite-foodbeefraw {
+    height: 40px;
+    background-position: -360px -480px
+}
+
+.sprite-foodcanbadguy {
+    height: 40px;
+    background-position: -440px -320px
+}
+
+.sprite-foodcanbadguyempty {
+    height: 40px;
+    background-position: -440px -360px
+}
+
+.sprite-foodcanbakedbeans {
+    height: 40px;
+    background-position: -440px -400px
+}
+
+.sprite-foodcanboneboy {
+    height: 40px;
+    background-position: 0 -440px
+}
+
+.sprite-foodcanboneboyempty {
+    height: 40px;
+    background-position: -40px -440px
+}
+
+.sprite-foodcancorn {
+    height: 40px;
+    background-position: -80px -440px
+}
+
+.sprite-foodcancornempty {
+    height: 40px;
+    background-position: -120px -440px
+}
+
+.sprite-foodcancurgon {
+    height: 40px;
+    background-position: -160px -440px
+}
+
+.sprite-foodcancurgonempty {
+    height: 40px;
+    background-position: -200px -440px
+}
+
+.sprite-foodcandemon {
+    height: 40px;
+    background-position: -240px -440px
+}
+
+.sprite-foodcandemonempty {
+    height: 40px;
+    background-position: -280px -440px
+}
+
+.sprite-foodcanfraggleos {
+    height: 40px;
+    background-position: -320px -440px
+}
+
+.sprite-foodcanfraggleosempty {
+    height: 40px;
+    background-position: -360px -440px
+}
+
+.sprite-foodcanfrankbeans {
+    height: 40px;
+    background-position: -400px -440px
+}
+
+.sprite-foodcangriff {
+    height: 40px;
+    background-position: -440px -440px
+}
+
+.sprite-foodcangriffempty {
+    height: 40px;
+    background-position: -480px 0
+}
+
+.sprite-foodcanherpy {
+    height: 40px;
+    background-position: -480px -40px
+}
+
+.sprite-foodcanherpyempty {
+    height: 40px;
+    background-position: -480px -80px
+}
+
+.sprite-foodcanorlok {
+    height: 40px;
+    background-position: -480px -120px
+}
+
+.sprite-foodcanorlokempty {
+    height: 40px;
+    background-position: -480px -160px
+}
+
+.sprite-foodcanpasta {
+    height: 40px;
+    background-position: -480px -200px
+}
+
+.sprite-foodcanpowell {
+    height: 40px;
+    background-position: -480px -240px
+}
+
+.sprite-foodcanpowellempty {
+    height: 40px;
+    background-position: -480px -280px
+}
+
+.sprite-foodcansardines {
+    height: 40px;
+    background-position: -480px -320px
+}
+
+.sprite-foodcantylers {
+    height: 40px;
+    background-position: -480px -360px
+}
+
+.sprite-foodcantylersempty {
+    height: 40px;
+    background-position: -480px -400px
+}
+
+.sprite-foodcanunlabeled {
+    height: 40px;
+    background-position: -480px -440px
+}
+
+.sprite-foodcanunlabeledempty {
+    height: 40px;
+    background-position: 0 -480px
+}
+
+.sprite-foodchickencooked {
+    height: 40px;
+    background-position: -400px -480px
+}
+
+.sprite-foodchickenraw {
+    height: 40px;
+    background-position: -440px -480px
+}
+
+.sprite-foodmeatcooked {
+    height: 40px;
+    background-position: -480px -480px
+}
+
+.sprite-foodmeatraw {
+    height: 40px;
+    background-position: -520px 0
+}
+
+.sprite-foodmre {
+    height: 40px;
+    background-position: -40px -480px
+}
+
+.sprite-foodmuttoncooked {
+    height: 40px;
+    background-position: -520px -40px
+}
+
+.sprite-foodmuttonraw {
+    height: 40px;
+    background-position: -520px -80px
+}
+
+.sprite-foodnutmix {
+    height: 40px;
+    background-position: -80px -480px
+}
+
+.sprite-foodpistachio {
+    height: 40px;
+    background-position: -120px -480px
+}
+
+.sprite-foodrabbitcooked {
+    height: 40px;
+    background-position: -520px -120px
+}
+
+.sprite-foodrabbitraw {
+    height: 40px;
+    background-position: -520px -160px
+}
+
+.sprite-foodsteakcooked {
+    height: 40px;
+    background-position: -160px -480px
+}
+
+.sprite-foodsteakraw {
+    height: 40px;
+    background-position: -200px -480px
+}
+
+.sprite-g36_c_sd_camo {
+    height: 20px;
+    background-position: -880px -440px
+}
+
+.sprite-g36_c_sd_eotech {
+    height: 20px;
+    background-position: -880px -460px
+}
+
+.sprite-g36a {
+    height: 20px;
+    background-position: -880px -480px
+}
+
+.sprite-g36a_camo {
+    height: 20px;
+    background-position: -880px -340px
+}
+
+.sprite-g36c {
+    height: 20px;
+    background-position: -880px -360px
+}
+
+.sprite-g36c_camo {
+    height: 20px;
+    background-position: -880px -380px
+}
+
+.sprite-g36k {
+    height: 20px;
+    background-position: -880px -400px
+}
+
+.sprite-g36k_camo {
+    height: 20px;
+    background-position: -880px -420px
+}
+
+.sprite-gaz_vodnik {
+    height: 22px;
+    background-position: -840px -559px
+}
+
+.sprite-gaz_vodnik_medevac {
+    height: 22px;
+    background-position: -840px -581px
+}
+
+.sprite-generator_dz {
+    height: 40px;
+    background-position: -520px -200px
+}
+
+.sprite-glock17_ep1 {
+    height: 40px;
+    background-position: -760px -720px
+}
+
+.sprite-glt_m300_lt {
+    height: 33px;
+    background-position: -800px -170px
+}
+
+.sprite-glt_m300_st {
+    height: 13px;
+    background-position: -960px -188px
+}
+
+.sprite-gnt_c185u {
+    height: 30px;
+    background-position: -800px -490px
+}
+
+.sprite-handchemblue {
+    height: 40px;
+    background-position: -520px -240px
+}
+
+.sprite-handchemgreen {
+    height: 40px;
+    background-position: -520px -280px
+}
+
+.sprite-handchemred {
+    height: 40px;
+    background-position: -520px -320px
+}
+
+.sprite-handgrenade {
+    height: 40px;
+    background-position: -520px -360px
+}
+
+.sprite-handgrenade_east {
+    height: 40px;
+    background-position: -520px -400px
+}
+
+.sprite-handgrenade_stone {
+    height: 40px;
+    background-position: -520px -440px
+}
+
+.sprite-handgrenade_west {
+    height: 40px;
+    background-position: -520px -480px
+}
+
+.sprite-handroadflare {
+    height: 40px;
+    background-position: 0 -520px
+}
+
+.sprite-hatchet_swing {
+    height: 40px;
+    background-position: -40px -520px
+}
+
+.sprite-hilux1_civil_1_open {
+    height: 23px;
+    background-position: -840px -404px
+}
+
+.sprite-hilux1_civil_2_covered {
+    height: 24px;
+    background-position: -840px -288px
+}
+
+.sprite-hilux1_civil_3_open {
+    height: 21px;
+    background-position: 0 -850px
+}
+
+.sprite-hilux1_civil_3_open_ep1 {
+    height: 21px;
+    background-position: -40px -850px
+}
+
+.sprite-hmmwv {
+    height: 21px;
+    background-position: -520px -828px
+}
+
+.sprite-hmmwv_ambulance {
+    height: 26px;
+    background-position: -240px -800px
+}
+
+.sprite-hmmwv_ambulance_cz_des_ep1 {
+    height: 34px;
+    background-position: -760px -760px
+}
+
+.sprite-hmmwv_ambulance_des_ep1 {
+    height: 34px;
+    background-position: -800px 0
+}
+
+.sprite-hmmwv_ambulance_dz {
+    height: 26px;
+    background-position: -280px -800px
+}
+
+.sprite-hmmwv_armored {
+    height: 22px;
+    background-position: -840px -603px
+}
+
+.sprite-hmmwv_des_ep1 {
+    height: 24px;
+    background-position: -840px -24px
+}
+
+.sprite-hmmwv_dz {
+    height: 21px;
+    background-position: -560px -828px
+}
+
+.sprite-hmmwv_m2 {
+    height: 26px;
+    background-position: -320px -800px
+}
+
+.sprite-hmmwv_m998a2_sov_des_ep1 {
+    height: 34px;
+    background-position: -800px -34px
+}
+
+.sprite-hmmwv_m1035_des_ep1 {
+    height: 27px;
+    background-position: -40px -800px
+}
+
+.sprite-hmmwv_m1151_m2_cz_des_ep1 {
+    height: 37px;
+    background-position: -360px -760px
+}
+
+.sprite-hmmwv_m1151_m2_des_ep1 {
+    height: 37px;
+    background-position: -400px -760px
+}
+
+.sprite-huntingrifle {
+    height: 20px;
+    background-position: -920px -500px
+}
+
+.sprite-igla {
+    height: 40px;
+    background-position: -200px -520px
+}
+
+.sprite-ikarus {
+    height: 18px;
+    background-position: -960px -18px
+}
+
+.sprite-ikarus_tk_civ_ep1 {
+    height: 26px;
+    background-position: -360px -800px
+}
+
+.sprite-ir_strobe_marker {
+    height: 40px;
+    background-position: -120px -520px
+}
+
+.sprite-ir_strobe_target {
+    height: 40px;
+    background-position: -160px -520px
+}
+
+.sprite-irstrobe {
+    height: 40px;
+    background-position: -80px -520px
+}
+
+.sprite-itemalumbar {
+    height: 40px;
+    background-position: -240px -520px
+}
+
+.sprite-itemalumbar10oz {
+    height: 40px;
+    background-position: -280px -520px
+}
+
+.sprite-itemantibiotic {
+    height: 40px;
+    background-position: -320px -520px
+}
+
+.sprite-itembandage {
+    height: 40px;
+    background-position: -360px -520px
+}
+
+.sprite-itembloodbag {
+    height: 40px;
+    background-position: -400px -520px
+}
+
+.sprite-itembronzebar {
+    height: 40px;
+    background-position: -440px -520px
+}
+
+.sprite-itemburlap {
+    height: 40px;
+    background-position: -480px -520px
+}
+
+.sprite-itemcanvas {
+    height: 40px;
+    background-position: -520px -520px
+}
+
+.sprite-itemcompass {
+    height: 40px;
+    background-position: -560px 0
+}
+
+.sprite-itemcopperbar {
+    height: 40px;
+    background-position: -560px -40px
+}
+
+.sprite-itemcopperbar10oz {
+    height: 40px;
+    background-position: -560px -80px
+}
+
+.sprite-itemcrowbar {
+    height: 54px;
+    background-position: 0 0
+}
+
+.sprite-itemepinephrine {
+    height: 40px;
+    background-position: -560px -120px
+}
+
+.sprite-itemetool {
+    height: 40px;
+    background-position: -560px -160px
+}
+
+.sprite-itemfishingpole {
+    height: 40px;
+    background-position: -560px -200px
+}
+
+.sprite-itemflashlight {
+    height: 40px;
+    background-position: -560px -240px
+}
+
+.sprite-itemflashlightred {
+    height: 40px;
+    background-position: -560px -280px
+}
+
+.sprite-itemfuelbarrel {
+    height: 40px;
+    background-position: -560px -320px
+}
+
+.sprite-itemgenerator {
+    height: 40px;
+    background-position: -560px -400px
+}
+
+.sprite-itemgoldbar {
+    height: 40px;
+    background-position: -560px -440px
+}
+
+.sprite-itemgoldbar10oz {
+    height: 40px;
+    background-position: -560px -480px
+}
+
+.sprite-itemgps {
+    height: 40px;
+    background-position: -560px -360px
+}
+
+.sprite-itemhatchet {
+    height: 40px;
+    background-position: -560px -520px
+}
+
+.sprite-itemheatpack {
+    height: 40px;
+    background-position: 0 -560px
+}
+
+.sprite-itemjerrycan {
+    height: 40px;
+    background-position: -40px -560px
+}
+
+.sprite-itemjerrycanempty {
+    height: 40px;
+    background-position: -80px -560px
+}
+
+.sprite-itemknife {
+    height: 40px;
+    background-position: -120px -560px
+}
+
+.sprite-itemlightbulb {
+    height: 40px;
+    background-position: -160px -560px
+}
+
+.sprite-itemmachete {
+    height: 40px;
+    background-position: -200px -560px
+}
+
+.sprite-itemmap {
+    height: 40px;
+    background-position: -240px -560px
+}
+
+.sprite-itemmatchbox {
+    height: 40px;
+    background-position: -280px -560px
+}
+
+.sprite-itemmorphine {
+    height: 40px;
+    background-position: -320px -560px
+}
+
+.sprite-itempainkiller {
+    height: 40px;
+    background-position: -360px -560px
+}
+
+.sprite-itempole {
+    height: 40px;
+    background-position: -400px -560px
+}
+
+.sprite-itemradio {
+    height: 40px;
+    background-position: -440px -560px
+}
+
+.sprite-itemrainbowtrout {
+    height: 40px;
+    background-position: -480px -560px
+}
+
+.sprite-itemsandbag {
+    height: 40px;
+    background-position: -520px -560px
+}
+
+.sprite-itemseabass {
+    height: 40px;
+    background-position: -560px -560px
+}
+
+.sprite-itemseabasscooked {
+    height: 40px;
+    background-position: -600px 0
+}
+
+.sprite-itemsilverbar {
+    height: 40px;
+    background-position: -600px -40px
+}
+
+.sprite-itemsilverbar10oz {
+    height: 40px;
+    background-position: -600px -80px
+}
+
+.sprite-itemsodaclays {
+    height: 40px;
+    background-position: -600px -120px
+}
+
+.sprite-itemsodaclaysempty {
+    height: 40px;
+    background-position: -600px -160px
+}
+
+.sprite-itemsodacoke {
+    height: 40px;
+    background-position: -600px -200px
+}
+
+.sprite-itemsodadrwaste {
+    height: 40px;
+    background-position: -600px -240px
+}
+
+.sprite-itemsodadrwasteempty {
+    height: 40px;
+    background-position: -600px -280px
+}
+
+.sprite-itemsodaempty {
+    height: 40px;
+    background-position: -600px -320px
+}
+
+.sprite-itemsodafranka {
+    height: 40px;
+    background-position: -600px -360px
+}
+
+.sprite-itemsodafrankaempty {
+    height: 40px;
+    background-position: -600px -400px
+}
+
+.sprite-itemsodalemonade {
+    height: 40px;
+    background-position: -600px -440px
+}
+
+.sprite-itemsodalemonadeempty {
+    height: 40px;
+    background-position: -600px -480px
+}
+
+.sprite-itemsodalirik {
+    height: 40px;
+    background-position: -600px -520px
+}
+
+.sprite-itemsodalirikempty {
+    height: 40px;
+    background-position: -600px -560px
+}
+
+.sprite-itemsodalvg {
+    height: 40px;
+    background-position: 0 -600px
+}
+
+.sprite-itemsodalvgempty {
+    height: 40px;
+    background-position: -40px -600px
+}
+
+.sprite-itemsodamdew {
+    height: 40px;
+    background-position: -80px -600px
+}
+
+.sprite-itemsodamtngreen {
+    height: 40px;
+    background-position: -120px -600px
+}
+
+.sprite-itemsodamtngreenempty {
+    height: 40px;
+    background-position: -160px -600px
+}
+
+.sprite-itemsodamzly {
+    height: 40px;
+    background-position: -200px -600px
+}
+
+.sprite-itemsodamzlyempty {
+    height: 40px;
+    background-position: -240px -600px
+}
+
+.sprite-itemsodapeppsy {
+    height: 40px;
+    background-position: -280px -600px
+}
+
+.sprite-itemsodapeppsyempty {
+    height: 40px;
+    background-position: -320px -600px
+}
+
+.sprite-itemsodapepsi {
+    height: 40px;
+    background-position: -360px -600px
+}
+
+.sprite-itemsodar4z0r {
+    height: 40px;
+    background-position: -400px -600px
+}
+
+.sprite-itemsodar4z0rempty {
+    height: 40px;
+    background-position: -440px -600px
+}
+
+.sprite-itemsodarabbit {
+    height: 40px;
+    background-position: -480px -600px
+}
+
+.sprite-itemsodarabbitempty {
+    height: 40px;
+    background-position: -520px -600px
+}
+
+.sprite-itemsodasacrite {
+    height: 40px;
+    background-position: -560px -600px
+}
+
+.sprite-itemsodasacriteempty {
+    height: 40px;
+    background-position: -600px -600px
+}
+
+.sprite-itemsodasmasht {
+    height: 40px;
+    background-position: -640px 0
+}
+
+.sprite-itemsodasmashtempty {
+    height: 40px;
+    background-position: -640px -40px
+}
+
+.sprite-itemtanktrap {
+    height: 40px;
+    background-position: -640px -80px
+}
+
+.sprite-itemtent {
+    height: 40px;
+    background-position: -640px -120px
+}
+
+.sprite-itemtentbag {
+    height: 40px;
+    background-position: -640px -160px
+}
+
+.sprite-itemtinbar {
+    height: 40px;
+    background-position: -640px -200px
+}
+
+.sprite-itemtinbar10oz {
+    height: 40px;
+    background-position: -640px -240px
+}
+
+.sprite-itemtoolbox {
+    height: 40px;
+    background-position: -640px -280px
+}
+
+.sprite-itemtrashrazor {
+    height: 40px;
+    background-position: -640px -320px
+}
+
+.sprite-itemtrashtoiletpaper {
+    height: 40px;
+    background-position: -640px -360px
+}
+
+.sprite-itemtrout {
+    height: 40px;
+    background-position: -640px -400px
+}
+
+.sprite-itemtroutcooked {
+    height: 40px;
+    background-position: -640px -440px
+}
+
+.sprite-itemtuna {
+    height: 40px;
+    background-position: -640px -480px
+}
+
+.sprite-itemtunacooked {
+    height: 40px;
+    background-position: -640px -520px
+}
+
+.sprite-itemwatch {
+    height: 40px;
+    background-position: -640px -600px
+}
+
+.sprite-itemwaterbottle {
+    height: 40px;
+    background-position: 0 -640px
+}
+
+.sprite-itemwaterbottleboiled {
+    height: 40px;
+    background-position: -40px -640px
+}
+
+.sprite-itemwaterbottleunfilled {
+    height: 40px;
+    background-position: -80px -640px
+}
+
+.sprite-itemvault {
+    height: 40px;
+    background-position: -640px -560px
+}
+
+.sprite-itemwire {
+    height: 40px;
+    background-position: -120px -640px
+}
+
+.sprite-javelin {
+    height: 20px;
+    background-position: -880px -500px
+}
+
+.sprite-ka60_gl_nac {
+    height: 18px;
+    background-position: -960px -36px
+}
+
+.sprite-kamaz {
+    height: 22px;
+    background-position: -840px -625px
+}
+
+.sprite-kamazrefuel {
+    height: 22px;
+    background-position: -840px -647px
+}
+
+.sprite-kostey_map_case {
+    height: 40px;
+    background-position: -160px -640px
+}
+
+.sprite-kostey_notebook {
+    height: 40px;
+    background-position: -200px -640px
+}
+
+.sprite-kostey_photos {
+    height: 40px;
+    background-position: -240px -640px
+}
+
+.sprite-kpfs_golf_g {
+    height: 19px;
+    background-position: -920px -930px
+}
+
+.sprite-kpfs_golf_p {
+    height: 21px;
+    background-position: -80px -850px
+}
+
+.sprite-kpfs_golf_post {
+    height: 22px;
+    background-position: -280px -828px
+}
+
+.sprite-kpfs_golf_tk {
+    height: 20px;
+    background-position: -920px -520px
+}
+
+.sprite-ksvk {
+    height: 20px;
+    background-position: -920px -540px
+}
+
+.sprite-l39_tk_ep1 {
+    height: 19px;
+    background-position: 0 -911px
+}
+
+.sprite-lada1 {
+    height: 22px;
+    background-position: -840px -669px
+}
+
+.sprite-lada1_gdr {
+    height: 22px;
+    background-position: -840px -691px
+}
+
+.sprite-lada1_tk_civ_ep1 {
+    height: 27px;
+    background-position: -80px -800px
+}
+
+.sprite-lada2 {
+    height: 20px;
+    background-position: -880px -520px
+}
+
+.sprite-lada2_gdr {
+    height: 25px;
+    background-position: -640px -800px
+}
+
+.sprite-lada2_tk_civ_ep1 {
+    height: 28px;
+    background-position: -800px -756px
+}
+
+.sprite-lada4_gdr {
+    height: 22px;
+    background-position: -840px -713px
+}
+
+.sprite-lada5_gdr {
+    height: 27px;
+    background-position: -120px -800px
+}
+
+.sprite-ladalm {
+    height: 21px;
+    background-position: -600px -828px
+}
+
+.sprite-landrover_cz_ep1 {
+    height: 34px;
+    background-position: -800px -68px
+}
+
+.sprite-landrover_mg_tk_ep1 {
+    height: 37px;
+    background-position: -440px -760px
+}
+
+.sprite-landrover_special_cz_ep1 {
+    height: 26px;
+    background-position: -400px -800px
+}
+
+.sprite-landrover_tk_civ_ep1 {
+    height: 32px;
+    background-position: -800px -302px
+}
+
+.sprite-laserbatteries {
+    height: 40px;
+    background-position: -280px -640px
+}
+
+.sprite-laserdesignator {
+    height: 40px;
+    background-position: -320px -640px
+}
+
+.sprite-leeenfield {
+    height: 20px;
+    background-position: -880px -540px
+}
+
+.sprite-len_l119a1_acog {
+    height: 19px;
+    background-position: -40px -911px
+}
+
+.sprite-len_l119a1_acog_cqb {
+    height: 19px;
+    background-position: -80px -911px
+}
+
+.sprite-len_l119a1_acog_cqb_d {
+    height: 19px;
+    background-position: -120px -911px
+}
+
+.sprite-len_l119a1_acog_cqb_sd {
+    height: 19px;
+    background-position: -160px -911px
+}
