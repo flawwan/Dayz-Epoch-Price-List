@@ -1,6 +1,6 @@
 # Dayz Epoch Price List
 
-This script is most likely very outdated and probably very unsecure :)
+This script is very outdated and probably very unsecure :)
 
 Search for items and get the current ingame price!
 
